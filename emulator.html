@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>Storymoto game story engine - demo</title>
+  <link rel="Shortcut Icon" type="image/ico" href="favicon.ico">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+  <script src="js/jquery.timers.js"></script>
+  <script type="text/javascript" src="js/jquery.JST.js"></script>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-536704-17']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+
+<style type="text/css">
+  BODY, TBODY {
+    font-family: arial, serif;
+    font-size: 13px;
+    background-color: #fff;
+  }
+
+  h1 {
+    color: #6FB703
+  }
+
+  h2 {
+    font-size: 20px;
+    padding: 0 0 10px 0;
+    margin: 0
+  }
+
+  h3 {
+    font-size: 16px;
+    padding: 0 0 10px 0;
+    margin: 0
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px dotted #999
+  }
+
+  .navigation td {
+    padding: 5px
+  }
+
+  #dialogViewerPlace {
+    padding: 4px;
+    margin: 4px;
+  }
+
+  #log, #playerStatus, #menu {
+    height: 800px;
+    overflow: auto;
+    width: 95%;
+    padding: 4px;
+    margin: 4px;
+  }
+
+  #log {
+    height: 800px;
+  }
+
+  #menu {
+    height: 100px;
+  }
+
+  .button {
+    font-weight: bolder;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    background-color: #000;
+    padding: 5px 10px;
+    margin: 5px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+  }
+
+  .button:hover {
+    text-decoration: none;
+    color: #99FE00
+  }
+
+  .link {
+    cursor: pointer;
+    text-decoration: none;
+    padding: 2px 5px;
+    font-size: 14px;
+    color: #000
+  }
+
+  .link:hover {
+    text-decoration: underline;
+    color: #6FB703
+  }
+
+  .link.selected {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #000;
+    color: #fff;
+    display: inline-block
+  }
+
+  .moving {
+    font-size: 11px;
+    color: gray;
+  }
+
+  .missingMenuObject {
+    color: orange;
+    font-style: italic;
+  }
+
+  .missing, .missingDialog {
+    color: red;
+    font-style: italic;
+  }
+
+  .systemSays {
+    background-color: yellow;
+    font-size: 14px;
+    padding: 5px
+  }
+
+  .playerThinks {
+    background-color: red;
+    font-size: 14px;
